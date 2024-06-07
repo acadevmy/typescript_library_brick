@@ -2,11 +2,11 @@ export default {
   preset: "ts-jest",
   testEnvironment: "node",
   moduleNameMapper: {
-    "^lib/(.*)$": "<rootDir>/lib/$1",
+    "^src/(.*)$": "<rootDir>/src/$1",
   },
   modulePathIgnorePatterns: ["./dist/"],
   coveragePathIgnorePatterns: [],
-  collectCoverageFrom: ["./lib/**/*.ts", "!./lib/**/*.test.ts"],
+  collectCoverageFrom: ["./src/**/*.ts", "!./src/**/*.test.ts"],
   coverageThreshold: {
     global: {
       branches: 50,

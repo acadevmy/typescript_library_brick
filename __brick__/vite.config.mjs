@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     lib: {
       name: 'index',
-      entry: [resolve(__dirname, "lib/index.ts")],
+      entry: [resolve(__dirname, "src/index.ts")],
       formats: ["es", "cjs", "iife", "umd"],
       tsconfigPath: 'tsconfig.build.json',
       treeshake: true,
@@ -23,7 +23,7 @@ export default defineConfig({
     cssMinify: false,
     ssr: true,
     ssrManifest: true,
-    assetsDir: "lib/assets",
+    assetsDir: "src/assets",
     chunkSizeWarningLimit: 500,
     commonjsOptions: {
       sourceMap: true,
@@ -35,7 +35,7 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      include: ["lib/"],
+      include: ["src/"],
       tsconfigPath: 'tsconfig.build.json',
     }),
   ],

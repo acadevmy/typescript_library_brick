@@ -16,7 +16,7 @@
       "files": [
         "./vite.config.ts",
         "./jest.config.ts",
-        "lib/**/*.ts"
+        "src/**/*.ts"
       ],
       "extends": [
         "eslint:recommended",
@@ -49,7 +49,7 @@
         "project": "./tsconfig.json"
       },
       "files": [
-        "lib/**/*.ts"
+        "src/**/*.ts"
       ]
     }
   ]
