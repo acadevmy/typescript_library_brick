@@ -1,0 +1,13 @@
+name: typescript_library_brick
+description: A brick which allows you to create a typescript library
+
+version: 1.0.0
+
+environment:
+  mason: 0.1.0-dev.54
+
+vars:
+  libraryName:
+    type: string
+    description: The Library Name
+    prompt: What is the name of this typescript library?
