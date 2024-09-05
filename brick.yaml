@@ -4,7 +4,7 @@ description: A brick which allows you to create a typescript library
 version: 1.0.0
 
 environment:
-  mason: 0.1.0-dev.54
+  mason: 0.1.0-dev.57
 
 vars:
   libraryName:
