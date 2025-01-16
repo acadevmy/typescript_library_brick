@@ -2,7 +2,6 @@
   "name": "{{libraryName.paramCase()}}",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.1.2",
   "scripts": {
     "preinstall": "pnpm dlx only-allow pnpm",
     "build": "rimraf dist && vite build",
@@ -24,6 +23,9 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
   "devDependencies": {
     "@devmy/eslint-plugin": "^1.0.0",
     "@types/lodash-es": "^4.17.12",
@@ -38,7 +40,14 @@
     "vite": "^6.0.3",
     "vite-plugin-dts": "^4.3.0"
   },
-  "dependencies": {
-    "lodash-es": "^4.17.21"
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=9.15.0"
+  },
+  "pnpm": {
+    "executionEnv": {
+      "nodeVersion": "20.10.0"
+    }
   }
 }
